@@ -1,17 +1,22 @@
 # Users API
 
+# hoisted BaseUrl : 
+```txt
+ https://user-apis-postgres.onrender.com
+ ```
+
 REST API built with Node.js, Express, Sequelize, PostgreSQL, JWT, dotenv, cors, Jest, and Supertest.
 
 ## Environment
 
-Create a `.env` file in the project root.
+Create a `.env` file in the project root I am aware that this is sensitive information.
 
 ```env
-DATABASE_URL=postgres://avnadmin:AVNS_2p0w07S2_Mk21y1ONo4@pg-9b357ee-darshankardile42-759f.e.aivencloud.com:26387/defaultdb
-AUTH_EMAIL=admin@example.com
-AUTH_PASSWORD=password123
-PORT=3000
-JWT_SECRET=8o77vtfrd57rd
+DATABASE_URL="postgres://avnadmin:AVNS_2p0w07S2_Mk21y1ONo4@pg-9b357ee-darshankardile42-759f.e.aivencloud.com:26387/defaultdb"
+AUTH_EMAIL="admin@example.com"
+AUTH_PASSWORD="password123"
+PORT="3000"
+JWT_SECRET="8o77vtfrd57rd"
 ```
 
 ## Install And Run
@@ -254,4 +259,5 @@ Responses:
 3. Copy the returned `token`.
 4. Send protected requests with `Authorization: Bearer JWT_TOKEN_HERE`.
 5. Use `GET /users?limit=20&offset=0` to read users with Sequelize/PostgreSQL pagination.
-# User_apis_postgres
+
+
