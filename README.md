@@ -51,6 +51,9 @@ Content-Type: application/json
 
 Body:
 
+# !! Important Use the same admin credentials to log in and explore all features:
+# "email": "admin@example.com" AND "password": "password123"
+
 ```json
 {
   "email": "admin@example.com",
